@@ -62,6 +62,11 @@ instance unique au contraire de la méthode Fabrique qui peut permettre de crée
 
 ## Exercices 7
 
+Nous avons créé la classe `TimestampedLoggerDecorator` héritant de `NamedLogger`. Celui-ci contient un `Logger` 
+(`FileLogger` ou `NameLogger`).
+Nous avons modifié notre méthode static pour `new TimestampedLoggerDecorator(name, new ConsoleLogger(name))`. 
+Notre logger est encapsulé dans notre décorateur qui ajoute la date au début du message à afficher.
+
 ## Exercices 8
 
 ## Exercice 9

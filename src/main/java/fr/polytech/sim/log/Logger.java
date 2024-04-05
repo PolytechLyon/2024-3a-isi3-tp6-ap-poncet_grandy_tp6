@@ -13,4 +13,6 @@ public interface Logger {
      */
     void log(String format, Object... args);
 
+    abstract void writeLog(String message);
+
 }
