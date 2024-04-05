@@ -29,6 +29,12 @@ façon.
 
 ## Exercices 3
 
+1. Mettre le constructeur de Clock en private. Il ne doit plus être possible de créer librement une nouvelle instance de 
+Clock.
+2. Ajouter un attribut et un accesseur sur l'instance de la clock qui vérifie si l'attribut est déjà instancié avant de 
+la créer
+3. Remplacer le `new Clock()` par un `Clock.getInstance()` dans `Wheel` pour créer ou récupérer l'instance de `Clock`
+
 ## Exercices 4
 
 ## Exercices 5
