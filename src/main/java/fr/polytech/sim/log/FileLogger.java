@@ -6,7 +6,7 @@ import java.io.IOException;
 /**
  * File logger.
  */
-public class FileLogger extends NamedLogger {
+class FileLogger extends NamedLogger {
     private static final String FILE_NAME = "logs.txt";
 
     /**
@@ -14,7 +14,7 @@ public class FileLogger extends NamedLogger {
      *
      * @param name  logger name.
      */
-    public FileLogger(String name) {
+    FileLogger(String name) {
         super(name);
     }
 

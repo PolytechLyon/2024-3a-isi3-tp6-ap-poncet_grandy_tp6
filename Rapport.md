@@ -57,6 +57,9 @@ actuelle) selon l'implémentation des enfants.
 
 ## Exercices 6
 
+La différence entre un Singleton et la méthode Fabrique réside dans le fait que le Singleton permet de partager une 
+instance unique au contraire de la méthode Fabrique qui peut permettre de créer de multiples instances d'une même classe
+
 ## Exercices 7
 
 ## Exercices 8
