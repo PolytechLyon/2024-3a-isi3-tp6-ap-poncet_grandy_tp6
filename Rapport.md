@@ -69,6 +69,8 @@ Notre logger est encapsulé dans notre décorateur qui ajoute la date au début 
 
 ## Exercices 8
 
+Le patron de conception utilisé est Facade qui sert à proposer un accès simplifié à la classe `ServiceLoader`
+
 ## Exercice 9
 
 
