@@ -5,6 +5,8 @@ import fr.polytech.sim.log.Logger;
 import fr.polytech.sim.log.LoggerFactory;
 import fr.polytech.sim.utils.Context;
 
+import java.util.Iterator;
+
 /**
  * Bike simulation.
  */
@@ -12,10 +14,11 @@ public class BikeSimulator implements Simulation {
     private final Logger logger = LoggerFactory.createNamedLogger("BikeSimulator");
 
     public void run() {
-        Bike bike = Context.inject(Bike.class);
-        this.logger.log("Bike's speed %.2f Km/h.", bike.getVelocity());
-        this.logger.log("Bike's mass %.2f Kg.", bike.getMass());
-
-
+        Iterator<Bike> bikeIterator = Context.injectAll(Bike.class);
+        while (bikeIterator.hasNext()) {
+            Bike bike = bikeIterator.next();
+            this.logger.log("Bike's speed %.2f Km/h.", bike.getVelocity());
+            this.logger.log("Bike's mass %.2f Kg.", bike.getMass());
+        }
     }
 }

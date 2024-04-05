@@ -75,8 +75,12 @@ Il est possbile d'avoir plusieurs lignes, chaque ligne correspond à une classe 
 
 ## Exercice 9
 
+Nous avons codé `injectAll()` pour renvoyer un itérateur, puis nous utilisons cet itérateur pour créer des vélos.
 
+Quel patron de conception propose cette méthode pour parcourir tous les objets d'un type donné disponibles dans le 
+contexte applicatif ?
+Le patron de conception est l'itérateur
 
-
-
-
+On avait une erreur au runtime pour l'instanciation de `TagAlongBike` par le fait qu'il n'y avait pas de constructeur
+par défaut. En effet, `ServiceLoader` est une classe qui permet uniquement d'instancier une classe à partir de son 
+constructeur vide (san utiliser d'introspection pour instancier les attributs)
