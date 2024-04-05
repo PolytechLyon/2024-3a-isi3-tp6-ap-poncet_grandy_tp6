@@ -14,5 +14,7 @@ public class BikeSimulator implements Simulation {
         Bike bike = new SimpleBike();
         this.logger.log("Bike's speed %.2f Km/h.", bike.getVelocity());
         this.logger.log("Bike's mass %.2f Kg.", bike.getMass());
+
+
     }
 }
