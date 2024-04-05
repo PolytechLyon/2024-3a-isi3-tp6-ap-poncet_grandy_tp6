@@ -37,6 +37,18 @@ la créer
 
 ## Exercices 4
 
+Les classes `Bike` et `Wheel` n'appartiennent pas au même paquetage. `Bike` appartient à `*.cycling` et `Wheel` à 
+`*.transport`
+Il y a une dépendance cyclique entre les 2 classes. Cela pose un problème si l'on utilise une `Wheel` sans avoir 
+l'association avec un `Bike`.
+
+`Wheel` utilise la fonction `getPush()` de `Bike` quand on veut calculer la vitesse.
+Oui, il existe une abstraction de la classe `Bike` qui isole la fonctionnalité : la classe `Vehicle`. Le paquetage où se 
+trouve cette fonctionnalité est `*.transport`.
+
+La solution adoptée est de changer le type de l'attribut `drive` de `Bike` vers `Vehicle` => plus de dépendances 
+cycliques
+
 ## Exercices 5
 
 ## Exercices 6
