@@ -51,6 +51,10 @@ cycliques
 
 ## Exercices 5
 
+Dans `NamedLogger` nous avons créé une fonction `log()` qui formate le message puis appelle la méthode 
+`writeLog(message)` qui définit concrètement où "rendre" le message (dans la console ou dans un fichier à l'heure 
+actuelle) selon l'implémentation des enfants.
+
 ## Exercices 6
 
 ## Exercices 7
