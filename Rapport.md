@@ -16,6 +16,17 @@ ajouter les masses individuelles au véhicule. Pareil pour la vitesse à quelque
 
 ## Exercices 2
 
+Le patron de conception utilisé pour `getVelocity()` est le patron de conception **Itérateur**
+
+Ce patron de conception permet de parcourir l'ensemble des `MobileObject` en s'adaptant à la structure de voisinage
+
+Chaque feuille, `MobileObject`, connaît son poids et sa vitesse. Le Vélo, peut ainsi faire le parcours des composants
+et calculer la vitesse et le poids total.
+
+On peut modifier le type de collection pour stocker les composants. On ne doit pas modifier la méthode `getVelocity()` 
+grâce au patron de conception `Itérateur` qui nous permet d'explorer la collection de composants toujours de la même 
+façon.
+
 ## Exercices 3
 
 ## Exercices 4
