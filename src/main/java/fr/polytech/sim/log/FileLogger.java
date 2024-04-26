@@ -6,7 +6,7 @@ import java.io.IOException;
 /**
  * File logger.
  */
-public class FileLogger extends NamedLogger {
+class FileLogger extends NamedLogger {
     private static final String FILE_NAME = "logs.txt";
 
     /**
@@ -14,14 +14,12 @@ public class FileLogger extends NamedLogger {
      *
      * @param name  logger name.
      */
-    public FileLogger(String name) {
+    FileLogger(String name) {
         super(name);
     }
 
     @Override
-    synchronized public void log(String format, Object... args) {
-        String entry = String.format(format, args);
-        String message = String.format("%s\t%s\n", this.name, entry);
+    public void writeLog(String message) {
         try (FileWriter fileWriter = new FileWriter(FILE_NAME, true)) {
             fileWriter.write(message);
         } catch (IOException e) {
